@@ -1,3 +1,118 @@
-<h1>
-  {{title}}
-</h1>
+<div>
+  <nav class="whiteframe-3dp top-nav-bar">
+    <ul class="nav-menu">
+      <li routerLinkActive="active"><a routerLink="/home">Home</a></li>
+      <li routerLinkActive="active"><a routerLink="/resume">Resume</a></li>
+      <li routerLinkActive="active"><a routerLink="/contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <aside class="row direction-vertical whiteframe-2dp sidebar">
+          <div class="">
+            <div class="profile">
+              <img src="../assets/me.jpg" class="img-responsive" alt="">
+              <div class="overlay-on-image">
+                <h3 class="profile-name">Joseph Dias</h3>
+                <div>JavaScript Developer</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 card info">
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-user-o fa-2x"></i>
+              </div>
+              <div class="col-md-10">
+                <div class="item">
+                  A strong interest in learning new technologies and an eye for detail. Good project management skills. Innovative thinking. Good problem solving capabilities. Be sharp and Patience in understanding the problems and issues. Understand software applications.
+                  A positive “can do” attitude to overcoming issues
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 card info">
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-phone fa-2x"></i>
+              </div>
+              <div class="col-md-10">
+                <div class="item">
+                  <h4>+91 9420776309</h4>
+                  <h5 class="sub-text-color">Mobile</h5>
+                </div>
+                <div class="item">
+                  <h4>+91 9420776309</h4>
+                  <h5 class="sub-text-color">Mobile</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 card info">
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-envelope fa-2x"></i>
+              </div>
+              <div class="col-md-10">
+                <div class="item">
+                  <h4>josephdias92@gmail.com</h4>
+                  <h5 class="sub-text-color">Personal</h5>
+                </div>
+                <div class="item">
+                  <h4>joseph.dias@srijan.net</h4>
+                  <h5 class="sub-text-color">Work</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 card info">
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-calendar-o fa-2x"></i>
+              </div>
+              <div class="col-md-10">
+                <div class="item">
+                  <h2>Professional Skills</h2>
+                </div>
+                <div class="item">
+                  <h4>HTML</h4>
+                  <div class="progress">
+                    <div class="determinate" style="width: 70%;"></div>
+                  </div>
+                </div>
+                <div class="item">
+                  <h4>CSS</h4>
+                  <div class="progress">
+                    <div class="determinate" style="width: 60%;"></div>
+                  </div>
+                </div>
+                <div class="item">
+                  <h4>JavaScript</h4>
+                  <div class="progress">
+                    <div class="determinate" style="width: 90%;"></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <div class="content col-md-8 col-md-offset-1">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+  <div class="footer ">
+    <div>
+      <ul class="social-icons ">
+        <li><a target="_blank " href="https://github.com/Josephdias92 " class="fa alt fa-github "><span class="label ">Instagram</span></a></li>
+        <li><a target="_blank " href="http://codepen.io/josephdias92 " class="fa alt fa-codepen "><span class="label ">CodePen</span></a></li>
+        <li><a target="_blank " href="https://in.linkedin.com/in/joseph-dias-5897523a " class="fa alt fa-linkedin-square "><span class="label ">LinkedIn</span></a></li>
+        <li><a target="_blank " href="https://twitter.com/joeykdias " class="fa alt fa-twitter "><span class="label ">Twitter</span></a></li>
+        <li><a target="_blank " href="mailto:josephdias92@gmail.com?Subject=Hello%20Joseph " class="fa alt fa-envelope "><span class="label ">Email</span></a></li>
+      </ul>
+    </div>
+  </div>
+</div>

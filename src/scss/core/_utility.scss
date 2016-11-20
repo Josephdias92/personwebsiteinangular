@@ -1,0 +1,63 @@
+//https://css-tricks.com/snippets/css/clear-fix/
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+* html .clearfix {
+  zoom: 1;
+}
+
+*:first-child+html .clearfix {
+  zoom: 1;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.img-thumbnail {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.card-header {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 5px 0 25px;
+}
+
+.primary-color {
+  color: #5da4d9;
+}
+
+hr {
+  height: 1px;
+  color: #ddd;
+  background: #ddd;
+  font-size: 0;
+  border: 0;
+}

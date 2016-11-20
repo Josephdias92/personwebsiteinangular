@@ -1,0 +1,125 @@
+.top-nav-bar {
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+  height: 60px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+}
+
+.container {
+  padding: 10px;
+  margin-top: 60px;
+  margin-bottom: 90px;
+}
+
+.nav-menu {
+  margin: 0 20px;
+  font-weight: bold;
+  float: right;
+  color: #a7a7a7;
+  list-style-type: none;
+  li {
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    text-align: center;
+    width: 90px;
+    float: left;
+    height: 60px;
+    padding: 20px 10px;
+    &:hover {
+      border-bottom: 3px solid #eee;
+    }
+    &.active {
+      border-bottom: 3px solid #3F51B5;
+    }
+  }
+}
+
+.sidebar {
+  color: #ffffff;
+  background-color: #5da4d9;
+  .profile {
+    padding: 0;
+    position: relative;
+    z-index: 0;
+    .overlay-on-image {
+      .profile-name {
+        font-weight: 600;
+        font-size: 25px;
+      }
+      left: 50%;
+      white-space: nowrap;
+      transform: translateX(-50%);
+      text-align: center;
+      position: absolute;
+      bottom: 10px;
+    }
+  }
+  .info {
+    border-bottom: 1px solid #4783c2;
+    padding-left: 15px;
+    .sub-text-color {
+      padding-top: 5px;
+      color: #eee;
+    }
+    .item {
+      padding-bottom: 10px;
+    }
+    /* Progress Bar */
+    .progress {
+      position: relative;
+      height: 4px;
+      display: block;
+      width: 100%;
+      background-color: #4783c2;
+      border-radius: 2px;
+      background-clip: padding-box;
+      margin: 0.5rem 0 1rem 0;
+      overflow: hidden;
+      .determinate {
+        position: absolute;
+        background-color: inherit;
+        top: 0;
+        bottom: 0;
+        background-color: white;
+        transition: width .3s linear;
+      }
+    }
+  }
+}
+
+.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  background-color: white;
+  text-align: center;
+}
+
+.social-icons {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+  li {
+    display: inline-block;
+    padding: 0 1.5em 0 0;
+    a {
+      text-decoration: none;
+      color: #949494;
+      font-size: 24px;
+      &:hover {
+        color: #333;
+      }
+    }
+  }
+  .label {
+    display: none;
+  }
+}

@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import "scss/all";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: $background-color;
+  color: $main-text-color;
+}
+
+.bg-white {
+  background: white;
+}
+
+.direction-vertical {
+  flex-direction: column;
+}
+
+.card {
+  padding: 10px;
+}
+
+.whiteframe-1dp {
+  box-shadow: $whiteframe-shadow-1dp;
+}
+
+.whiteframe-2dp {
+  box-shadow: $whiteframe-shadow-2dp;
+}
+
+.whiteframe-3dp {
+  box-shadow: $whiteframe-shadow-3dp;
+}
+
+.text-small {
+  font-size: 14px;
+}
