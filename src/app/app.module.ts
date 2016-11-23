@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
+import { AngularFireModule } from 'angularfire2';
+
 
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
@@ -28,6 +30,14 @@ const appRoutes: Routes = [
     component:ContactMeComponent
   }
 ];
+// Must export the config
+export const firebaseConfig = {
+  apiKey: "AIzaSyDGYD2qEqJUmCVU_8yTqoCm2otG2hPiGzg",
+  authDomain: "josephdias92.firebaseapp.com",
+  databaseURL: "https://josephdias92.firebaseio.com",
+  storageBucket: "firebase-josephdias92.appspot.com",
+  messagingSenderId: "891344356636"
+};
 
 @NgModule({
   declarations: [
@@ -39,8 +49,10 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     FormsModule,
+    FormsModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]
