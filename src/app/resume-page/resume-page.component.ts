@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFireDatabase, FirebaseObjectObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-resume-page',
@@ -6,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./resume-page.component.scss']
 })
 export class ResumePageComponent implements OnInit {
-
-  constructor() { }
+  resume: FirebaseObjectObservable<any>;
+  constructor(db: AngularFireDatabase) { 
+    this.resume = db.object('/resume');
+  }
 
   ngOnInit() {
   }

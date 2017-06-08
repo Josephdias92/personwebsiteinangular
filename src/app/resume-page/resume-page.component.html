@@ -1,77 +1,57 @@
 <div>
-  <div class="row whiteframe-2dp bg-white card">
-    <div class="col-md-1">
-      <i class="fa fa-briefcase fa-2x"></i>
-    </div>
-    <div class="col-md-11">
-      <h3 class="card-header">Work Experience</h3>
-
-      <div class="item">
-        <h2 class="item-header">JavaScript Developer <a href="http://www.srijan.net" target="_blank">@Srijan technologies</a></h2>
-        <p class="primary-color text-small">Feb 2016 - Present</p>
-        <div class="details">
-          <ul>
-            <li>Understand client’s business needs and develop a software solution with necessary validations</li>
-            <li>Drive community technology consciousness/awareness by code sprints, sessions, demos, blogs, presentations etc</li>
-            <li>Contribute to interviews, peer reviews etc.</li>
-            <li>Take complete ownership for the quality of code</li>
-            <li>Provide assistance, guidance and support to other developers when necessary. Review codes of peers</li>
-            <li>Actively participate in tech discussions, estimations and also support the Tech Lead in technical/architectural decisions</li>
-          </ul>
+    <div class="row whiteframe-2dp bg-white card">
+        <div class="col-md-1">
+            <i class="fa fa-briefcase fa-2x"></i>
         </div>
-      </div>
-      <hr>
-      <div class="item">
-        <h2 class="item-header">FullStack Developer @Garud technologies</h2>
-        <p class="primary-color text-small">July 2015 - Jan 2016</p>
-        <div class="details">
-          <ul>
-            <li>Creating angular project structure</li>
-            <li>Creating WebAPI in C# MVC</li>
-            <li>Guiding the team to achieve goals</li>
-            <li>Following best practices</li>
-            <li>Deploying Angular application</li>
-            <li>Worked with Ionic framework(hybrid Application)</li>
-          </ul>
+        <div class="col-md-11">
+            <h3 class="card-header">Work Experience</h3>
+
+            <div class="item" *ngFor="let we of (resume|async)?.workexperience">
+                <h2 class="item-header">{{we.position}} <a [attr.href]="we.company.website" target="_blank">@{{we.company.name}}</a></h2>
+                <p class="primary-color text-small">{{we.duration}}</p>
+                <div class="details">
+                    <ul>
+                        <li *ngFor="let rnr of we.rnr">{{rnr}}</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  <div style="margin:15px;"></div>
-  <div class="row whiteframe-2dp bg-white card">
-    <div class="col-md-1">
-      <i class="fa fa-university fa-2x"></i>
-    </div>
-    <div class="col-md-11">
-      <h3 class="card-header">Education</h3>
+    <div style="margin:15px;"></div>
+    <div class="row whiteframe-2dp bg-white card">
+        <div class="col-md-1">
+            <i class="fa fa-university fa-2x"></i>
+        </div>
+        <div class="col-md-11">
+            <h3 class="card-header">Education</h3>
 
-      <div class="item">
-        <h2 class="item-header">Masters in Computer Application <a href="https://www.unigoa.ac.in/" target="_blank">@Goa University</a></h2>
-        <p class="primary-color text-small">May 2012 - June 2015</p>
-        <p></p>
-      </div>
-      <hr>
-      <div class="item">
-        <h2 class="item-header">Bachelors in Computer Application <a href="http://rosarycollege.org/" target="_blank">@Rosary College Navelim</a></h2>
-        <p class="primary-color text-small">July 2009 - April 2012</p>
-        <p></p>
-      </div>
+            <div class="item">
+                <h2 class="item-header">Masters in Computer Application <a href="https://www.unigoa.ac.in/" target="_blank">@Goa University</a></h2>
+                <p class="primary-color text-small">May 2012 - June 2015</p>
+                <p></p>
+            </div>
+            <hr>
+            <div class="item">
+                <h2 class="item-header">Bachelors in Computer Application <a href="http://rosarycollege.org/" target="_blank">@Rosary College Navelim</a></h2>
+                <p class="primary-color text-small">July 2009 - April 2012</p>
+                <p></p>
+            </div>
+        </div>
     </div>
-  </div>
-  <div style="margin:15px;"></div>
-  <div class="row whiteframe-2dp bg-white card">
-    <div class="col-md-1">
-      <i class="fa fa-plane fa-2x"></i>
-    </div>
-    <div class="col-md-11">
-      <h3 class="card-header">Interest</h3>
+    <div style="margin:15px;"></div>
+    <div class="row whiteframe-2dp bg-white card">
+        <div class="col-md-1">
+            <i class="fa fa-plane fa-2x"></i>
+        </div>
+        <div class="col-md-11">
+            <h3 class="card-header">Interest</h3>
 
-      <div class="item">
-        <span class="fa fa-music fa-2x primary-color" title="Music" style="margin-right:25px"></span>
-        <span class="fa fa-code fa-2x primary-color" title="Coding" style="margin-right:25px"></span>
-        <span class="fa fa-globe fa-2x primary-color" title="Roaming" style="margin-right:25px"></span>
-        <span class="fa fa-film fa-2x primary-color" title="Movie"></span>
-      </div>
+            <div class="item">
+                <span class="fa fa-music fa-2x primary-color" title="Music" style="margin-right:25px"></span>
+                <span class="fa fa-code fa-2x primary-color" title="Coding" style="margin-right:25px"></span>
+                <span class="fa fa-globe fa-2x primary-color" title="Roaming" style="margin-right:25px"></span>
+                <span class="fa fa-film fa-2x primary-color" title="Movie"></span>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
