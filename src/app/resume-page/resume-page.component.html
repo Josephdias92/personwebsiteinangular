@@ -5,15 +5,40 @@
         </div>
         <div class="col-md-11">
             <h3 class="card-header">Work Experience</h3>
-
-            <div class="item" *ngFor="let we of (resume|async)?.workexperience">
-                <h2 class="item-header">{{we.position}} <a [attr.href]="we.company.website" target="_blank">@{{we.company.name}}</a></h2>
-                <p class="primary-color text-small">{{we.duration}}</p>
-                <div class="details">
-                    <ul>
-                        <li *ngFor="let rnr of we.rnr">{{rnr}}</li>
-                    </ul>
-                </div>
+            <div class="item">
+              <h2 class="item-header">Sr. Frontend Developer <a href="https://www.persistent.com/" target="_blank">@Persistent System limited</a></h2>
+              <p class="primary-color text-small">July 2017 - Present</p>
+              <div class="details">
+              </div>
+            </div>
+            <div class="item">
+              <h2 class="item-header">JavaScript Developer <a href="http://www.srijan.net" target="_blank">@Srijan technologies</a></h2>
+              <p class="primary-color text-small">Feb 2016 - June 2017</p>
+              <div class="details">
+                <ul>
+                  <li>Understand client’s business needs and develop a software solution with necessary validations</li>
+                  <li>Drive community technology consciousness/awareness by code sprints, sessions, demos, blogs, presentations etc</li>
+                  <li>Contribute to interviews, peer reviews etc.</li>
+                  <li>Take complete ownership for the quality of code</li>
+                  <li>Provide assistance, guidance and support to other developers when necessary. Review codes of peers</li>
+                  <li>Actively participate in tech discussions, estimations and also support the Tech Lead in technical/architectural decisions</li>
+                </ul>
+              </div>
+            </div>
+            <hr>
+            <div class="item">
+              <h2 class="item-header">FullStack Developer @Garud technologies</h2>
+              <p class="primary-color text-small">July 2015 - Jan 2016</p>
+              <div class="details">
+                <ul>
+                  <li>Creating angular project structure</li>
+                  <li>Creating WebAPI in C# MVC</li>
+                  <li>Guiding the team to achieve goals</li>
+                  <li>Following best practices</li>
+                  <li>Deploying Angular application</li>
+                  <li>Worked with Ionic framework(hybrid Application)</li>
+                </ul>
+              </div>
             </div>
         </div>
     </div>
